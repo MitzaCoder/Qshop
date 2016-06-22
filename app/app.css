@@ -1,35 +1,56 @@
 body {
     margin: 0;
 }
+
 a {
     text-decoration: none;
     font-weight: lighter;
 
 }
+
 section {
     text-align: center;
     margin: 0 auto;
 }
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
 #hero-banner {
     background-image: url('assets/images/bg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
 }
+
 #header {
     overflow: hidden;
     height: 90px;
-    padding: 0  20px;
+    padding: 0 20px;
 }
+
 #hero-banner a {
     color: white;
 }
+
 #header .home-link {
     float: left;
 }
+
 #header #nav {
     float: right;
 }
+
 #header #nav ul li {
     list-style: none;
     display: inline-block;
@@ -37,28 +58,44 @@ section {
     font-size: 20px;
 
 }
+
 #hero-banner #banner-text {
     padding: 100px 0;
     text-align: center;
     margin: 0 auto;
 }
+
 #hero-banner #banner-text h1 {
     font-size: 50px;
     color: white;
     font-weight: lighter;
 
 }
+
 #hero-banner #banner-text h3 {
     font-size: 25px;
     color: white;
     font-weight: lighter;
 
 }
+
 #hero-banner #banner-text a {
     font-size: 25px;
     border: 1px solid white;
     padding: 10px 15px;
     border-radius: 10px;
+}
+.col {
+    width: 33.33%;
+    float: left;
+    margin-top: 30px;
+}
+.col img {
+    width: 100%;
+    height: auto;
+}
+.inner-wrapper {
+    padding: 20px 10px;
 }
 #section-one {
     overflow: auto;
@@ -66,19 +103,19 @@ section {
     color: white;
     padding: 30px 20px;
 }
-#section-one h1{
+
+#section-one h1 {
     margin: 0;
     font-weight: lighter;
 
 }
-#section-one h2{
+
+#section-one h2 {
     font-weight: lighter;
 }
-#section-one .col {
-    width: 33.33%;
-    float: left;
-    margin-top: 30px;
-}
+
+
+
 #section-one .col .image-wrapper {
     width: 100px;
     height: 100px;
@@ -87,6 +124,7 @@ section {
     border-radius: 50%;
     position: relative;
 }
+
 #section-one .col img {
     height: 50px;
     width: auto;
@@ -96,11 +134,42 @@ section {
     margin-top: -25px;
     margin-left: -25px;
 }
-#section-one .col .user-icon{
+
+#section-one .col .user-icon {
     font-size: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-top: -25px;
     margin-left: -25px;
+}
+
+#section-two {
+    background-color: #393f43;
+    color: white;
+    padding: 10px 0 70px 0;
+}
+
+#section-two h1 {
+    padding: 20px 0;
+    margin: 0;
+
+}
+
+#section-two h4 {
+    font-weight: 400;
+
+}
+footer{
+    text-align: center;
+    height: 100px;
+    background: #fff;
+}
+
+footer .copyright-container, footer .back-to-top {
+    display: inline-block;
+}
+footer .back-to-top a {
+    color: #34b1c4;
+    margin-left: 10px;
 }
