@@ -7,6 +7,9 @@ a {
     font-weight: lighter;
 
 }
+* {
+    box-sizing: border-box;
+}
 
 section {
     text-align: center;
@@ -27,6 +30,7 @@ section {
 /* close commented backslash hack */
 
 #hero-banner {
+    height:500px;
     background-image: url('assets/images/bg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,9 +64,8 @@ section {
 }
 
 #hero-banner #banner-text {
-    padding: 100px 0;
     text-align: center;
-    margin: 0 auto;
+    margin: 90px auto 0;
 }
 
 #hero-banner #banner-text h1 {
@@ -85,17 +88,46 @@ section {
     padding: 10px 15px;
     border-radius: 10px;
 }
+#hero-banner .learn-more{
+    background: transparent;
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+#hero-banner .learn-more:hover{
+    background: #34b1c4;
+}
+.container {
+    width: 1200px;
+    margin: auto;
+}
+.col-inline{
+    margin: 0 50px;
+    display: inline-block;
+}
 .col {
     width: 33.33%;
     float: left;
-    margin-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .col img {
     width: 100%;
     height: auto;
+    margin-bottom: 30px;
 }
-.inner-wrapper {
-    padding: 20px 10px;
+.col a {
+    display: inline-block;
+    transition: all .2s ease-in-out;
+
+}
+.col a:hover {
+    transform: scale(1.1);
+    opacity: 0.3;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
 }
 #section-one {
     overflow: auto;
@@ -116,7 +148,7 @@ section {
 
 
 
-#section-one .col .image-wrapper {
+#section-one .col-inline .image-wrapper {
     width: 100px;
     height: 100px;
     border: 1px solid #000000;
@@ -125,7 +157,7 @@ section {
     position: relative;
 }
 
-#section-one .col img {
+#section-one .col-inline img {
     height: 50px;
     width: auto;
     position: absolute;
@@ -135,7 +167,7 @@ section {
     margin-left: -25px;
 }
 
-#section-one .col .user-icon {
+#section-one .col-inline .user-icon {
     font-size: 50px;
     position: absolute;
     top: 50%;
@@ -170,6 +202,15 @@ footer .copyright-container, footer .back-to-top {
     display: inline-block;
 }
 footer .back-to-top a {
+
     color: #34b1c4;
     margin-left: 10px;
+}
+footer .back-to-top a i {
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+footer .back-to-top a i:hover{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
