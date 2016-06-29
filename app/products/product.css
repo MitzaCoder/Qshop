@@ -73,3 +73,6 @@
     border-top: 3px solid #e74c3c;
     border-radius: 6px;
 }
+.tabs .tab-pane {
+    padding-top: 30px;
+}
