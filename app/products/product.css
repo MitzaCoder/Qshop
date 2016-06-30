@@ -16,23 +16,20 @@
 }
 .single-product .description{
     color: #888;
-    font-family: Open sans;
     font-size: 13px;
     line-height: 20px;
     margin-bottom: 20px;
 }
 
-.add-to-cart .input-group {
-    float: left;
-}
-.single-product .quantity .minus {
+
+.quantity .minus {
     border-radius: 6px 0 0 6px;
 }
-.single-product .quantity .plus {
+.quantity .plus {
     border-radius: 0  6px 6px 0 ;
 }
-.single-product .quantity .minus,
-.single-product .quantity .plus {
+.quantity .minus,
+.quantity .plus {
     background: #E96546;
     border: 1px solid #C8BFC6;
     box-shadow: none;
@@ -51,7 +48,7 @@
     text-align: center;
     width: 40px;
 }
-.single-product .input-text.qty {
+.quantity .input-text.qty {
     border-width: 1px 0 1px 0;
     border-color: #eee;
     border-style: solid ;

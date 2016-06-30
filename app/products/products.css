@@ -1,29 +1,12 @@
-body{
-    background: url(../assets/images/pat-bg.png);
-}
-html,body {
-    height: 100%;
-}
-a, a:hover {
-    text-decoration: none;
-    color: #337ab7;;
-}
 
-.navbar.tall {
-    min-height: 70px;
-}
-#header a {
-    color: #393f43;
-    font-size: 20px;
-    font-weight: bold;
-}
 .banner {
-    margin-top: 70px;
-    padding: 50px 0;
     background: url(../assets/images/crossword.png) repeat scroll 0 0 #1ABC9C;
 }
 .banner h1{
     font-size: 50px;
+}
+.product-list {
+    padding-bottom: 100px;
 }
 .products-description{
     padding: 40px 0;
@@ -133,25 +116,7 @@ a, a:hover {
     font-size: 13px;
 }
 
-footer {
-    text-align: center;
-}
-footer .copyright-container, footer .back-to-top {
-     display: inline-block;
- }
-footer .back-to-top a {
-    color: #16A085;
-    opacity: 0.87;
-    margin-left: 10px;
-}
-footer .back-to-top a i {
-    -webkit-transition: -webkit-transform .8s ease-in-out;
-    transition: transform .8s ease-in-out;
-}
-footer .back-to-top a i:hover{
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-}
+
 .tabs .table{
     margin-bottom: 0;
 }

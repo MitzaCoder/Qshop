@@ -1,26 +1,4 @@
 
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-html,body {
-    height: 100%;
-}
-.navbar {
-    min-height: 70px;
-}
-/* Header */
-a,
-a:hover{
-    text-decoration: none;
-
-}
-#header a {
-    color: #393f43;
-    font-size: 20px;
-    font-weight: bold;
-}
 
 .login-section {
     margin-top: 70px ;
@@ -46,29 +24,4 @@ a:hover{
 .btn.btn-register {
     color: #fff;
     font-weight: 900;
-}
-footer {
-    text-align: center;
-    clear: both;
-    position: fixed;
-    height: 90px;
-    bottom:0;
-    width: 100%;
-}
-
-footer .copyright-container, footer .back-to-top {
-    display: inline-block;
-}
-footer .back-to-top a {
-    color: #16A085;
-    opacity: 0.87;
-    margin-left: 10px;
-}
-footer .back-to-top a i {
-    -webkit-transition: -webkit-transform .8s ease-in-out;
-    transition: transform .8s ease-in-out;
-}
-footer .back-to-top a i:hover{
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
 }
