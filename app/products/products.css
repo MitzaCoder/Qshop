@@ -9,7 +9,7 @@ a, a:hover {
     color: #337ab7;;
 }
 
-.nav {
+.navbar.tall {
     min-height: 70px;
 }
 #header a {
@@ -151,4 +151,10 @@ footer .back-to-top a i {
 footer .back-to-top a i:hover{
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+}
+.tabs .table{
+    margin-bottom: 0;
+}
+.tabs .table th {
+    border-right: 1px solid #ddd;
 }
