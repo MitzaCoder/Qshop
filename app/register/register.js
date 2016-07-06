@@ -11,26 +11,18 @@ function markFieldInvalid(field) {
 document.addEventListener('DOMContentLoaded', function() {
     console.log("Page loaded!");
     var registerForm = document.querySelector('form');
-    var usernameField = document.getElementById('username');
-    var emailField  = document.getElementById('email');
-    var passwordField = document.getElementById('password');
-    var confirmPasswordField = document.getElementById('confirm-password'); 
+    var formFields = document.querySelectorAll('form input');
+    
+    for (var i = 0; i < formFields.length; ++i) {
+        formFields[i].addEventListener('change', function() {
+            if (isFieldEmpty(this)) {
+                markFieldInvalid(this);
+            }
+        });
+    }
 
     registerForm.addEventListener('submit', function(event) {
-        if (isFieldEmpty(usernameField)) {
-            markFieldInvalid(usernameField);
-            event.preventDefault();
-        }
-        if (isFieldEmpty(emailField)) {
-            markFieldInvalid(emailField);
-            event.preventDefault();
-        }
-        if (isFieldEmpty(passwordField)) {
-            markFieldInvalid(passwordField);
-            event.preventDefault();
-        }
-        if (isFieldEmpty(confirmPasswordField)) {
-            markFieldInvalid(confirmPasswordField);
+        if (fieldsAreValid) {
             event.preventDefault();
         }
     });
